@@ -9,7 +9,7 @@ template	./templates/default/
 log_file	false
 description_file	false
 user_list	.htpasswd.autoindex
-download_count	false
+download_count	_c.txt
 hidden_files	hidden_files
 banned_list	false
 show_dir_size	true
