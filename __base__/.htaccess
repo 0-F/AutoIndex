@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule (.+\/)?([\w_\-\.]+)$ ../index.php?dir=$1&file=$2 
