@@ -2,9 +2,9 @@
 
 /* AutoIndex PHP Script config file
 
-base_dir	./
+base_dir	./__base__
 icon_path	index_icons/winxp/
-language	en
+language	fr
 template	./templates/default/
 log_file	false
 description_file	false
@@ -14,7 +14,7 @@ hidden_files	hidden_files
 banned_list	false
 show_dir_size	true
 use_login_system	false
-force_download	false
+force_download	true
 search_enabled	true
 anti_leech	false
 must_login_to_download	false
