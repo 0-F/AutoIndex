@@ -162,6 +162,7 @@ class Url
 			throw new ExceptionDisplay('<h3>Error 401: permission denied</h3> you cannot access <em>'
 			. Url::html_output($file_dl) . '</em> on this server.');
 		}
+		ob_flush();
 		@apache_setenv('no-gzip', 1);
 		@ini_set('zlib.output_compression', 'Off');
 		if ($headers)
@@ -185,7 +186,7 @@ class Url
 				break;
 			}
 			echo $temp;
-			flush();
+			ob_flush();
 			if (BANDWIDTH_LIMIT)
 			{
 				sleep(1);
