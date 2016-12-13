@@ -350,7 +350,7 @@ class Htaccess
 			{
 				continue;
 			}
-			if ($conditional_defined != '')
+			if (isset($conditional_defined))
 			//deal with <IfDefine>
 			{
 				$conditional_defined = strtoupper($conditional_defined);
