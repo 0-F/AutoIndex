@@ -162,6 +162,8 @@ class Url
 			throw new ExceptionDisplay('<h3>Error 401: permission denied</h3> you cannot access <em>'
 			. Url::html_output($file_dl) . '</em> on this server.');
 		}
+		@apache_setenv('no-gzip', 1);
+		@ini_set('zlib.output_compression', 'Off');
 		if ($headers)
 		{
 			$outname = Item::get_basename($file_dl);
